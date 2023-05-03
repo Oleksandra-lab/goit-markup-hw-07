@@ -38,11 +38,17 @@ p {
   border: 0;
   padding: 0;
 }
+.btn {
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+}
 
 .list {
     list-style: none;
     padding: 0;
     margin: 0;
+    
 }
 .link {
     text-decoration: none;
@@ -53,7 +59,7 @@ p {
 .container {
     /* Phone styles & > */
     min-width: 320px;
-    max-width: 428;
+    max-width: 428px;
     padding: 0 16px;
     margin-left: auto;
     margin-right: auto;
@@ -64,7 +70,7 @@ p {
 /* Tablet styles & > */
 @media only screen and (min-width: 768px) {
     .container {
-        max-width: 720px;
+        max-width: 768px;
     }
 }
 /* Decktop styles & > */
@@ -106,6 +112,7 @@ p {
 }
 .header-logo {
      margin-right: 76px;
+     padding: 24px 0;
 }
 .header  .logo_span {
     color: var(--navy-blue);
@@ -123,13 +130,22 @@ p {
 
     transition: color var(--animation-fast);
 }
-
 .nav-list {
-    display: flex;
-    gap: 40px;
+    display: none;
+
     
 
 }
+@media screen and (min-width: 768px) {
+    .nav-list {
+        display: flex;
+        gap: 40px;
+        
+    
+    }
+    
+}
+
 
 .header_nav_link:hover,
 .header_nav_link:focus {
@@ -162,9 +178,16 @@ p {
     transition: color var(--animation-fast);
 }
 .add-list {
-    display: flex;
-    gap: 40px;
-    margin: 0;
+    display: none;
+    
+}
+@media screen and (min-width: 768px) {
+    .add-list {
+        display: flex;
+        gap: 40px;
+        margin: 0;
+    }
+    
 }
 .add-list .link:hover {
     color: var(--ocean);
@@ -172,6 +195,143 @@ p {
 .add-list .link:focus {
     color: var(--ocean);
 }
+
+.menu-btn {
+    
+    border: none;
+    background: transparent;
+
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 80px 40px;
+    background-color: var(--white);
+    z-index: 999;
+  
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .mobile-menu.is-open {
+    transform: translateX(0);
+  }
+  .menu-list {
+    display: block;
+    margin-bottom: 284px;
+  }
+  .menu_list_item  {
+    
+
+  }
+  .menu_link {
+    display: block;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+
+
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navy-blue);
+    }
+    
+    .menu_link.current-menu {
+        color: var(--ocean);
+    }
+    .close-menu {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        display: block;
+        margin-left: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+
+        background-color: rgba(231, 233, 252, 0.1);
+        border-radius: 50%;
+        border: 1px solid var(--navy-blue);;
+
+        cursor: pointer;
+
+        transition: background-color var(--animation-fast);
+
+    }
+    .close-menu-icon {
+        fill: var(--navy-blue);
+    }
+    .menu-add-ress {
+
+    }
+    .menu-add-list {
+        display: block;
+
+    }
+    .menu-add_phone {
+        display: block;
+        
+        margin-bottom: 40px ;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+
+
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--iris)
+
+    }
+    .menu-add_email {
+        display: block;
+        margin-bottom: 48px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.1;
+
+
+        letter-spacing: 0.02em;
+        color: var(--slate);
+    }
+
+    .menu-social-network-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 56px;
+        
+    }
+    .menu-social-network-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        background-color: var(--iris);
+        border-radius: 50%;
+
+        transition: background-color var(--animation-fast);
+    }
+    
+
+    .menu-social-network-item {
+        width: 40px;
+        height: 40px;
+    }
+    .menu-social-network-link-icon {
+        fill: var(--cloud);
+    }
+
+
 
 /**
   |============================
@@ -748,7 +908,7 @@ p {
     }
     .modal {
         position: absolute;
-        position: relative;
+    
         
         top: 50%;
         left: 50%;
