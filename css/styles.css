@@ -551,7 +551,7 @@ p {
     }
     @media only screen and (min-width: 1158px) {
       .about_section {
-        display: block;
+          display: block;
           padding-bottom: 120px;
       }
       .about_section_title {
@@ -570,9 +570,7 @@ p {
       }
       .about_section_item {
           width: calc((100% - 48px) / 3);
-      } {
-        
-      }
+      } 
     }
     /**
       |============================
@@ -580,8 +578,26 @@ p {
       |============================
     */
     .team_section {
-        padding: 120px 0;
+        padding: 96px 0;
         background-color:  var(--cloud);
+    }
+    @media only screen and (max-width: 428px) {
+      .team_section_container {
+          padding-left: 82px;
+          padding-right: 82px;
+      } 
+    }
+    @media only screen and (min-width: 768px) {
+      .team_section {
+          padding: 96px 92px;
+          background-color:  var(--cloud);
+      } 
+    }
+    @media only screen and (min-width: 1158px) {
+      .team_section {
+          padding: 120px 0;
+          background-color:  var(--cloud);
+      }
     }
     .team_section_title {
         margin-bottom: 72px;
@@ -593,14 +609,31 @@ p {
         color:  var(--navy-blue) ;
     }
     .team_section_list {
-        display: flex;
-        gap: 24px;
+        --items: 1;
+        align-items: center;        
+    }
+    @media only screen and (max-width: 428px) {
+        .team_section_list{
+        gap: 72px;
+      }
+    }
+    @media only screen and (min-width: 768px) {
+      .team_section_list {
+          --items: 2;
+          row-gap: 64;        
+      } 
+    }
+    @media only screen and (min-width: 1158px) {
+      .team_section_list {
+          --items: 4;        
+      }
     }
     .team_section_list_item {
+        
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
         background-color:  var(--white) ;
         border-radius: 0px 0px 4px 4px;
-    }
+    } 
     .emp-name {
         padding: 32px 0;
         border-radius: 0px 0px 4px 4px;
@@ -623,7 +656,102 @@ p {
         letter-spacing: 0.02em;
 
         margin-bottom: 8px;
+    } 
+
+     
+
+
+
+    /* .team_section {
+        padding: 96px 0;
+        background-color:  var(--cloud);    
     }
+    @media only screen and (min-width: 1158px) {
+      .team_section {
+        padding: 120px 0;
+        background-color:  var(--cloud);        
+      }
+    }
+    .team_section_title {
+        margin-bottom: 72px;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color:  var(--navy-blue) ;
+    }
+    .team_section_list {
+        display: block;
+        
+        
+    }
+    @media only screen and (min-width: 768px) {
+      .team_section_list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 24px;
+        }
+    }
+    @media only screen and (min-width: 1158px) {
+       .team_section_list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 24px;
+        
+      }
+    }
+    .team_section_list_item {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 72px;
+
+        width: 264px;
+        height: 428px;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        background-color:  var(--white) ;
+        border-radius: 0px 0px 4px 4px;
+    
+        
+    }
+    .team_section_list_item:last-child {
+        margin-bottom: 0;
+    }
+    @media only screen and (min-width: 1158px) {
+      .team_section_list_item {
+          width: 264px;
+          height: 428px;
+          box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+          background-color:  var(--white) ;
+          border-radius: 0px 0px 4px 4px;
+      } 
+    }
+    
+    .emp-name {
+        padding: 32px 0;
+        border-radius: 0px 0px 4px 4px;
+    }
+    
+    .team_section_list_item_ttl {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: var(--navy-blue);
+    }
+    .team_section_list_item_txt {
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+
+        margin-bottom: 8px;
+    } */
     /**
       |============================
       | Social network list
