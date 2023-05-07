@@ -187,7 +187,7 @@ p {
 }
   
 .add-ress {
-    font-style: normal
+    font-style: normal;
 }
 .add_style {
     line-height: 1.5;
@@ -315,6 +315,7 @@ p {
         
         margin-bottom: 40px ;
         font-weight: 700;
+        font-style: normal;
         font-size: 36px;
         line-height: 1.1;
 
@@ -327,6 +328,7 @@ p {
     .menu-add_email {
         display: block;
         margin-bottom: 48px;
+        font-style: normal;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.1;
