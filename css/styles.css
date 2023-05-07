@@ -375,38 +375,37 @@ p {
   | Hero section
   |============================
 */
-.hero-section {
-    max-width: 428px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-     url(../images/hero-section/hero-image_mob@1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-
-    background-color: var(--navy-blue);
-    padding: 112px 0;
-   
-}
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .hero-section {      
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-        url(../images/hero-section/hero-image_mob@2x.jpg);
-    }
-}
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 428px) {
   .hero-section {
-      max-width: 768px;
+      /* max-width: 428px; */
+      margin-left: auto;
+      margin-right: auto;
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+       url(../images/hero-section/hero-image_mob@1x.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;  
+  
+      background-color: var(--navy-blue);
+      padding: 112px 0;     
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .hero-section {      
+          background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+          url(../images/hero-section/hero-image_mob@2x.jpg);
+      }
+  } 
+}
+@media only screen and (min-width: 429px) and (max-width: 767px){
+  .hero-section {
+      /* max-width: 768px; */
       margin-left: auto;
       margin-right: auto;
       background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
        url(../images/hero-section/hero-image_tab@1x.jpg );
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
-  
+      background-size: cover;  
   
       background-color: var(--navy-blue);
       padding: 112px 0;
@@ -419,17 +418,16 @@ p {
     }
 }
 
-@media only screen and (min-width: 1158px)  {
+@media only screen and (min-width: 769px) {
   .hero-section {
-    max-width: 1440px;
+    /* max-width: 1440px; */
       margin-left: auto;
       margin-right: auto;
       background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
        url(../images/hero-section/hero-image_deskt@1x.jpg);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
-  
+      background-size: cover;  
   
       background-color: var(--navy-blue);
       padding: 188px 0;
@@ -441,7 +439,6 @@ p {
       }
     }
 }
-
 
 .overlay {
    
