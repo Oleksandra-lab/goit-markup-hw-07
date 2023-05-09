@@ -1207,9 +1207,8 @@ p {
     box-sizing: border-box;
     background-color: transparent;
     border: 1px solid #FFFFFF;
-    drop-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-
     }
     .subscribe-form-input::placeholder {
         display: flex;
@@ -1292,10 +1291,7 @@ p {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) rotate(0) scale(1);
-        opacity: 1;
-
-
-       
+        opacity: 1;     
         
         padding: 72px 24px 0px 24px;
         
@@ -1307,15 +1303,12 @@ p {
     }
     @media only screen and (min-width: 1158px) {
       .modal {
-        min-height: 576px;
-        
+        min-height: 576px;        
       }
     }
     .backdrop.is-hidden .modal {
          transform: translate(-50%, -50%) rotate(360deg) scale(0.2);
          opacity: 0;
-
-
     }
     .modal-btn {
         position: absolute;
