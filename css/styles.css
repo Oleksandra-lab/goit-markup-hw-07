@@ -530,12 +530,7 @@ p {
         display: block;        
     }
 
-    @media only screen and (max-width: 428px) {
-      .benefi
-   {
-        
-      }
-    }
+    
     @media only screen and (min-width: 768px) {
       .benefits_section-list {
         display: flex;
@@ -552,7 +547,6 @@ p {
         gap: 24px;        
       }
     }
-
 
     .benefits_section_item {
         width: 100%;
