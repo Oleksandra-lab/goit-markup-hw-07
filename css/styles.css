@@ -237,6 +237,9 @@ p {
     }
 }
 
+.mobile-menu-contacts-vs-social {
+  margin-top: auto;
+}
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -246,6 +249,9 @@ p {
     padding: 80px 40px;
     background-color: var(--white);
     z-index: 999;
+
+    display: flex;
+    flex-direction: column;
   
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
@@ -256,7 +262,7 @@ p {
   }
   .menu-list {
     display: block;
-    margin-bottom: 284px;
+    /* margin-bottom: 284px; */
   }
   .menu_list_item  {
     
@@ -325,6 +331,11 @@ p {
         color: var(--iris)
 
     }
+    @media only screen and (max-width: 320px) {
+      .menu-add_phone {
+        font-size: 26px;        
+      }
+    }
     .menu-add_email {
         display: block;
         margin-bottom: 48px;
@@ -339,12 +350,17 @@ p {
     }
 
     .menu-social-network-list{
-        margin-bottom: 40px;
+        
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 56px;
-        
+        gap: 56px;        
+    }
+
+    @media only screen and (max-width: 320px) {
+      .menu-social-network-list{
+        gap: 28px;        
+      }
     }
     .menu-social-network-link {
         display: flex;
@@ -511,18 +527,21 @@ p {
       }
     }
     .benefits_section-list {
-        display: block;
+        display: block;        
+    }
+
+    @media only screen and (max-width: 428px) {
+      .benefi
+   {
         
-        
-        
-        /*  */
+      }
     }
     @media only screen and (min-width: 768px) {
       .benefits_section-list {
         display: flex;
         flex-wrap: wrap;
         column-count: 2;
-        gap: 24px;        
+        gap: 72px 24px;        
       }
     }
 
@@ -540,14 +559,22 @@ p {
         margin-bottom: 72px;
     }
 
+    @media only screen and (max-width: 765px) {
+      .last-child {
+        margin-bottom: 0;        
+      }
+    }
+
     @media only screen and (min-width: 768px) {
       .benefits_section_item  {
-        width: 356px;     
+        width: 356px;
+        margin-bottom: 0;     
       }
     }
     @media only screen and (min-width: 1158px) {
       .benefits_section_item {
-          width: calc((100% - 72px) / 4);          
+          width: calc((100% - 72px) / 4);
+          margin-bottom: 0;          
       } 
     }
     .benefits_section_item_img {
@@ -757,7 +784,12 @@ p {
     @media only screen and (min-width: 1158px) {
       .customers-section {  
         padding: 120px 0;
-        background-color: var(--white);
+        background-color: var(--white);        
+      }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1157px) {
+      .customers-section-container {
+        width: 582px;
         
       }
     }
@@ -1024,9 +1056,9 @@ p {
         justify-content: center;
         
     }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1157px) {
       .footer-content-container {
-        
+        width: 582px;
         display: flex;
         flex-wrap: wrap;
         gap: 72px 24px;
@@ -1048,7 +1080,12 @@ p {
         gap: 16px;
         flex-direction: column;
         justify-content: center;
-        /* margin-right: 120px; */
+       
+    }
+    @media only screen and (min-width: minwidthpx) {
+      .footer-content {
+        margin-right: 120px;        
+      }
     }
 
     .footer-logo {  
@@ -1061,7 +1098,6 @@ p {
       .footer-logo {
         display: inline-block;
         margin-left: 0;
-        margin-bottom: 16px;
         }
     }
     .footer .logo_span {
@@ -1085,6 +1121,7 @@ p {
         flex-wrap: wrap;
         gap: 16px;
         justify-content: center;
+        margin-right: 80px;
     }
     @media only screen and (min-width: 768px) {
       .footer-social-media-container {
@@ -1121,7 +1158,6 @@ p {
     @media only screen and (min-width: 1158px) {
       .footer-social-network-list{
         margin-left: 0;
-        margin-right: 80px;
        }
     }
     .footer-social-network-link {
@@ -1301,6 +1337,11 @@ p {
         
         transition: transform 400ms ease-in 200ms, opacity 400ms ease-in 200ms;
     }
+    @media only screen and (max-width: 320px) {
+      .modal {
+        width: calc(100% - 30px);        
+      }
+    }
     @media only screen and (min-width: 1158px) {
       .modal {
         min-height: 576px;        
@@ -1308,7 +1349,7 @@ p {
     }
     .backdrop.is-hidden .modal {
          transform: translate(-50%, -50%) rotate(360deg) scale(0.2);
-         opacity: 0;
+         opacity: 0; 
     }
     .modal-btn {
         position: absolute;
