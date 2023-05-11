@@ -1160,11 +1160,13 @@ p {
     @media only screen and (min-width: 768px) {
         .footer-social-network-list{
           margin-left: 0;
+          margin-right: 0;
          }
       }
     @media only screen and (min-width: 1158px) {
       .footer-social-network-list{
         margin-left: 0;
+        margin-right: 0;
        }
     }
     .footer-social-network-link {
