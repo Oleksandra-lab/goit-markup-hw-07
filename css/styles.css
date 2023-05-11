@@ -190,6 +190,7 @@ p {
     font-style: normal;
 }
 .add_style {
+    font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
@@ -333,7 +334,7 @@ p {
     }
     @media only screen and (max-width: 320px) {
       .menu-add_phone {
-        font-size: 26px;        
+        font-size: 20px;        
       }
     }
     .menu-add_email {
@@ -595,9 +596,15 @@ p {
         letter-spacing: 0.02em;
         color: var(--navy-blue) ;
     }
+    @media only screen and (min-width: 768px) {
+      .benefits_section_item_title {
+        text-align: left;
+      }
+    }
     @media only screen and (min-width: 1158px) {
       .benefits_section_item_title {   
         margin-bottom: 8px;
+        text-align: left;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -1063,8 +1070,8 @@ p {
       .footer-content-container {
         display: flex;
         flex-wrap: nowrap;
-        align-items: baseline;
-        
+        align-items: baseline; 
+        gap: 0;  
         
       }
     }
@@ -1076,7 +1083,7 @@ p {
         justify-content: center;
        
     }
-    @media only screen and (min-width: minwidthpx) {
+    @media only screen and (min-width: 1158px) {
       .footer-content {
         margin-right: 120px;        
       }
@@ -1115,11 +1122,17 @@ p {
         flex-wrap: wrap;
         gap: 16px;
         justify-content: center;
-        margin-right: 80px;
+        
     }
     @media only screen and (min-width: 768px) {
       .footer-social-media-container {
        display: block;
+      }
+    }
+    @media only screen and (min-width: 1158px) {
+      .footer-social-media-container {
+       display: block;
+       margin-right: 80px;
       }
     }
     .footer-social-media-ttl {
