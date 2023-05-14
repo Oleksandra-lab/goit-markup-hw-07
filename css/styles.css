@@ -189,13 +189,24 @@ p {
 .add-ress {
     font-style: normal;
 }
-.add_style {
-    font-size: 12px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--slate);
-
-    transition: color var(--animation-fast);
+@media only screen and (min-width: 768px) {
+  .add_style {
+      font-size: 12px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      color: var(--slate);
+  
+      
+  } 
+}
+@media only screen and (min-width: 1158px) {
+  .add_style {
+      font-size: 16px;
+      line-height: 1.5;
+      
+  
+      transition: color var(--animation-fast);
+  } 
 }
 .add-list {
     display: none;
@@ -354,7 +365,7 @@ p {
         
         display: flex;
         align-items: center;
-        justify-content: center;
+        
         gap: 56px;        
     }
 
